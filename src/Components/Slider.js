@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {SliderData} from './sliderData';
+import { Link } from 'react-router-dom'
 
 export default function Slider(props) {
 
@@ -37,7 +38,9 @@ const prevImage = () =>{
                     
                         {index === current && <strong className='slider-description-heading'>{slide.title}</strong>}
                         {index === current && <p className='slider-description-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo optio quae excepturi, enim totam facere eaque aliquid.</p>}
-                        {index === current && <button type="button" className="btn btn-secondary">Shop Now</button>}
+                        {index === current && <Link to='/ProductList'>
+                            <button type="button" className="btn btn-secondary">Shop Now</button>
+                        </Link>}
 
                     </div>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom'
 
 export default function Navebar() {
   return (
@@ -8,7 +9,7 @@ export default function Navebar() {
         <div className='Navbar'>
             
             <div className='Heading'>
-                <a className="navbar-brand" href="#">Navbar</a>
+                <Link className="navbar-brand" to="/">Navbar</Link>
             </div>
 
             <div className='searchinput'>
