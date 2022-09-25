@@ -30,15 +30,17 @@ const prevImage = () =>{
             return(
                 <>
                 
-                    <div className={index === current ? 'slideactive' : 'slide'} key = {index}>
+                    {/* <div className={index === current ? 'slide active' : 'slide'} key = {index}> */}
                         {index === current && <img src={slide.image} alt='image' className='slide-image'/>}
+                    {/* </div> */}
+                    <div className={index === current ? 'slider-Description' : 'slide'}>
+                    
+                        {index === current && <strong className='slider-description-heading'>{slide.title}</strong>}
+                        {index === current && <p className='slider-description-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo optio quae excepturi, enim totam facere eaque aliquid.</p>}
+                        {index === current && <button type="button" className="btn btn-secondary">Shop Now</button>}
+
                     </div>
-                    <div className={index === current ? 'slider-Description' : 'slide'} key = {index}>
-                        {index === current && <strong>Description</strong>}
-                        {index === current && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo optio quae excepturi, enim totam facere eaque aliquid.</p>}
-                        {index == current && <button>Shop Now</button>}
-                        
-                    </div>
+
                 
                 </>
             ) 
