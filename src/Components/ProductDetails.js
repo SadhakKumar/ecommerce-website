@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ProductDetails(props) {
   return (
@@ -17,7 +18,7 @@ export default function ProductDetails(props) {
             <h2>₹{props.price}</h2>
           </div>
           <div>
-            <button type="button" class="btn btn-dark">ADD TO CART</button>
+            <Link to ='/Cart' state={{image: props.image,price:props.price,details:props.details,details2:props.details2}}><button type="button" class="btn btn-dark">ADD TO CART</button></Link>
             <button type="button" class="btn btn-dark mx-3">ADD TO WISHLIST</button>
           </div>
         </div>
