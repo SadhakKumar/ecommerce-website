@@ -38,7 +38,7 @@ const prevImage = () =>{
                     
                         {index === current && <strong className='slider-description-heading'>{slide.title}</strong>}
                         {index === current && <p className='slider-description-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo optio quae excepturi, enim totam facere eaque aliquid.</p>}
-                        {index === current && <Link to='/ProductList'>
+                        {index === current && <Link to='CasualClothings'>
                             <button type="button" className="btn btn-secondary">Shop Now</button>
                         </Link>}
 
