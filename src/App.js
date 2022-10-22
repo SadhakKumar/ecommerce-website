@@ -24,12 +24,14 @@ function App() {
                 <Route exact path='Shoes' element = {<Casualwear page = {shoesPageData}/>}/>
                 <Route exact path='Classicwear' element = {<Casualwear page = {HomePageProduct}/>}/>
                 <Route path = '/product' element ={<Product/>}/>
+                  
                 <Route path = '/CasualClothings/product' element ={<Product/>}/>
                 <Route path = '/FormalClothing/product' element ={<Product/>}/>
                 <Route path = '/AthleticClothing/product' element ={<Product/>}/>
                 <Route path = '/Shoes/product' element ={<Product/>}/>
-                <Route path = '/Classicwear/product' element ={<Product/>}/>
+                <Route path = '/Classicwear/product' element ={<Product/>}/>  
                 <Route path='/Cart' element = {<Cart/>}/>
+                
           </Routes>
 
         </BrowserRouter>

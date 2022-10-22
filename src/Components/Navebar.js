@@ -25,7 +25,7 @@ export default function Navebar() {
                     <AccountCircleIcon/>
                 </div>
                 <div className='CartIcon'>
-                    <Link to="/Cart" state={{image: null,price:null,details:null,details2:null}} style={{ color: '#FFF' }}><ShoppingCartIcon/></Link>
+                    <Link to="/Cart" style={{ color: '#FFF' }}><ShoppingCartIcon/></Link>
                     
                 </div>
                 

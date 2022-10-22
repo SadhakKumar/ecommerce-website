@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { cartPageData } from './cartPageData';
 
 export default function ProductDetails(props) {
+
+
+  const AddToCartArray = (image,price,details,details2) =>{
+    const obj = {'image': image, 'price': price, 'details': details, 'details2': details2}
+    cartPageData.push(obj);
+  }
   return (
     <>
 
@@ -18,7 +25,7 @@ export default function ProductDetails(props) {
             <h2>₹{props.price}</h2>
           </div>
           <div>
-            <Link to ='/Cart' state={{image: props.image,price:props.price,details:props.details,details2:props.details2}}><button type="button" class="btn btn-dark">ADD TO CART</button></Link>
+            <button onClick={()=>AddToCartArray(props.image,props.price,props.details,props.details2)} type="button" class="btn btn-dark">ADD TO CART</button>
             <button type="button" class="btn btn-dark mx-3">ADD TO WISHLIST</button>
           </div>
         </div>
